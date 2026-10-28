@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="LensList finds and verifies free photography opportunities from official sources.">
+  <meta name="theme-color" content="#f4f2ed">
+  <title>LensList — Verified free photography opportunities</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header">
+    <a class="wordmark" href="#top" aria-label="LensList home">Lens<span>List</span></a>
+    <nav aria-label="Primary navigation">
+      <button class="nav-button active" data-view="browse" type="button">Browse</button>
+      <button class="nav-button" data-view="tracker" type="button">Tracker <span id="tracker-count" class="nav-count">0</span></button>
+      <button class="nav-button" data-view="review" type="button">Review queue <span id="review-count" class="nav-count">0</span></button>
+      <a href="#method">Method</a>
+    </nav>
+  </header>
+  <main id="main-content">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="status-line"><span class="pulse" aria-hidden="true"></span><span id="pipeline-status">Automation ready</span></div>
+      <h1 id="hero-title">Worth applying.<br>Free to enter.</h1>
+      <p class="hero-copy">Photography opportunities discovered from official sources, then separated into verified listings and a cautious review queue.</p>
+      <div class="update-line"><span>Last updated</span> <time id="last-updated">Loading…</time></div>
+      <dl class="hero-stats" aria-label="Directory summary">
+        <div><dt id="opportunity-count">0</dt><dd>verified active</dd></div>
+        <div><dt id="review-stat">0</dt><dd>awaiting review</dd></div>
+        <div><dt id="saved-stat">0</dt><dd>saved locally</dd></div>
+      </dl>
+    </section>
+    <section class="directory view active" data-view-panel="browse" aria-labelledby="directory-title">
+      <div class="section-heading"><div><div class="eyebrow">Verified feed</div><h2 id="directory-title">Open opportunities</h2></div><button class="text-button" id="clear-filters" type="button">Clear filters</button></div>
+      <form class="filters" id="filters" role="search" aria-label="Filter opportunities">
+        <div class="field field-search"><label for="search">Search</label><input id="search" type="search" placeholder="Title, organisation, theme…" autocomplete="off"></div>
+        <div class="field"><label for="category-filter">Category</label><select id="category-filter"><option value="all">All categories</option></select></div>
+        <div class="field"><label for="geography-filter">Geography</label><select id="geography-filter"><option value="all">Anywhere</option></select></div>
+        <div class="field"><label for="deadline-filter">Deadline</label><select id="deadline-filter"><option value="all">Any deadline</option><option value="30">Next 30 days</option><option value="90">Next 90 days</option><option value="rolling">Rolling / ongoing</option></select></div>
+        <label class="saved-toggle"><input id="saved-only" type="checkbox"><span>Saved only</span></label>
+      </form>
+      <div class="results-bar"><p id="results-summary" role="status" aria-live="polite">Loading opportunities…</p><p class="verified-key"><span aria-hidden="true">✓</span> Official-source fee evidence required</p></div>
+      <div class="opportunity-grid" id="opportunity-grid"></div>
+      <div class="empty-state" id="empty-state" hidden><h3>No verified matches</h3><p>Try broader filters or review the queue for listings still being checked.</p></div>
+    </section>
+    <section class="directory view" data-view-panel="tracker" aria-labelledby="tracker-title" hidden>
+      <div class="section-heading"><div><div class="eyebrow">Stored on this device</div><h2 id="tracker-title">Application tracker</h2></div><button class="text-button" id="export-tracker" type="button">Export tracker</button></div>
+      <p class="section-intro">Move saved opportunities through your application process. Tracker data stays in your browser and is never uploaded.</p>
+      <div class="tracker-board" id="tracker-board"></div>
+      <div class="empty-state" id="tracker-empty" hidden><h3>No tracked applications</h3><p>Save an opportunity, then choose a stage from its card.</p></div>
+    </section>
+    <section class="directory view" data-view-panel="review" aria-labelledby="review-title" hidden>
+      <div class="section-heading"><div><div class="eyebrow">Not in the active feed</div><h2 id="review-title">Review queue</h2></div></div>
+      <div class="review-notice"><strong>Why these are separate:</strong> a promising listing stays here until both its opening/deadline and absence of a mandatory fee are supported by an official source.</div>
+      <div class="opportunity-grid" id="review-grid"></div>
+      <div class="empty-state" id="review-empty" hidden><h3>The queue is clear</h3><p>No uncertain opportunities are waiting for review.</p></div>
+    </section>
+    <section class="method" id="method" aria-labelledby="method-title">
+      <div><div class="eyebrow">A deliberately high bar</div><h2 id="method-title">Verified, not merely found</h2></div>
+      <div class="method-copy">
+        <p><strong>Active feed:</strong> the official source contains explicit evidence such as “no application fee” or “free to submit,” with no conflicting mandatory-fee language. The call must also be rolling or have a future deadline.</p>
+        <p><strong>Review queue:</strong> fee language, deadline, opening state, copyright, or publication costs still need confirmation. Review items are never presented as confirmed free.</p>
+        <p><strong>Automation:</strong> GitHub Actions checks trusted official sources daily, normalises and deduplicates candidates, archives expired listings, records deadline changes, runs tests, and redeploys this static site.</p>
+      </div>
+    </section>
+  </main>
+  <dialog id="detail-dialog" aria-labelledby="dialog-title"><button class="dialog-close" type="button" aria-label="Close details">×</button><div id="dialog-content"></div></dialog>
+  <footer><a class="wordmark" href="#top">Lens<span>List</span></a><p>Calm tools for serious applications.</p><p><a href="https://github.com/Diniverse/LensList">Source &amp; automation health</a></p></footer>
+</body>
+</html>
