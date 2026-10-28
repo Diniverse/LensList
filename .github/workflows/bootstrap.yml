@@ -1,8 +1,6 @@
-name: Bootstrap full LensList repository
+name: Bootstrap LensList source tree
 
 on:
-  push:
-    branches: [main]
   workflow_dispatch:
 
 permissions:
@@ -15,10 +13,9 @@ jobs:
       - uses: actions/checkout@v4
       - name: Expand the validated source package
         run: |
-          tar -xzf lenslist-source.tar.gz
+          tar --exclude='.github/workflows/*' -xzf lenslist-source.tar.gz
           rm lenslist-source.tar.gz
-          rm .github/workflows/bootstrap.yml
-      - name: Commit the complete repository
+      - name: Commit application source
         run: |
           git config user.name "lenslist-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
