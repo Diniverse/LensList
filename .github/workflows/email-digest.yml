@@ -1,0 +1,43 @@
+name: Send LensList email digest
+
+on:
+  schedule:
+    - cron: "47 6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: lenslist-email
+  cancel-in-progress: false
+
+jobs:
+  email:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Send new-opportunity and deadline alerts
+        env:
+          LENSLIST_SMTP_HOST: ${{ secrets.LENSLIST_SMTP_HOST }}
+          LENSLIST_SMTP_PORT: ${{ secrets.LENSLIST_SMTP_PORT }}
+          LENSLIST_SMTP_USERNAME: ${{ secrets.LENSLIST_SMTP_USERNAME }}
+          LENSLIST_SMTP_PASSWORD: ${{ secrets.LENSLIST_SMTP_PASSWORD }}
+          LENSLIST_EMAIL_FROM: ${{ secrets.LENSLIST_EMAIL_FROM }}
+          LENSLIST_EMAIL_TO: ${{ secrets.LENSLIST_EMAIL_TO }}
+          LENSLIST_DIGEST_FREQUENCY: ${{ vars.LENSLIST_DIGEST_FREQUENCY }}
+          LENSLIST_DEADLINE_DAYS: ${{ vars.LENSLIST_DEADLINE_DAYS }}
+        run: python -m scripts.notify
+      - name: Persist duplicate-alert protection
+        run: |
+          git config user.name "lenslist-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/notification_state.json
+          git diff --cached --quiet || git commit -m "chore(email): update notification state"
+          git push
