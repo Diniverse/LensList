@@ -1,12 +1,7 @@
 {
-  "checked_at": "2026-11-04T14:37:21Z",
+  "checked_at": "2026-11-05T14:42:14Z",
   "sources_total": 5,
-  "sources_successful": 4,
+  "sources_successful": 5,
   "candidates_found": 14,
-  "errors": [
-    {
-      "source": "fstop-submissions",
-      "error": "ReadTimeout: HTTPSConnectionPool(host='www.fstopmagazine.com', port=443): Read timed out. (read timeout=25)"
-    }
-  ]
+  "errors": []
 }
