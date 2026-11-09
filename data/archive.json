@@ -20,13 +20,13 @@
       "reporting",
       "fellowship"
     ],
-    "discovered_at": "2026-11-08T13:28:21Z",
+    "discovered_at": "2026-11-09T16:25:59Z",
     "fee_status": "unverified",
     "fee_evidence": null,
-    "last_verified": "2026-11-08T13:28:22Z",
+    "last_verified": "2026-11-09T16:26:01Z",
     "status": "expired",
     "fingerprint": "dca71ec4ee87777b",
-    "archived_at": "2026-11-08T13:28:22Z"
+    "archived_at": "2026-11-09T16:26:01Z"
   },
   {
     "id": "women-photograph-grants",
@@ -49,13 +49,13 @@
       "project funding",
       "women"
     ],
-    "discovered_at": "2026-11-08T13:28:21Z",
+    "discovered_at": "2026-11-09T16:26:01Z",
     "fee_status": "confirmed-free",
     "fee_evidence": "FAQ: These grants are open to female, female-identifying, and non-binary documentary photographers of any nationality. There is no fee to apply. Applications must be submitted in English. There are no specific parameters on what is meant by \"emerging photographer",
-    "last_verified": "2026-11-08T13:28:22Z",
+    "last_verified": "2026-11-09T16:26:01Z",
     "status": "expired",
     "fingerprint": "0d025759aad4ab77",
-    "archived_at": "2026-11-08T13:28:22Z"
+    "archived_at": "2026-11-09T16:26:01Z"
   },
   {
     "id": "magnum-foundation-news-18",
