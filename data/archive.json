@@ -1,5 +1,34 @@
 [
   {
+    "id": "fstop-submissions",
+    "title": "F-Stop Magazine submissions",
+    "organization": "F-Stop Magazine",
+    "category": "Magazine",
+    "location": "International / online",
+    "geography": "International",
+    "deadline": "2026-11-10",
+    "rolling": true,
+    "eligibility": "Photographers worldwide; image and issue rules vary.",
+    "compensation": "Publication; the official guidelines state there is no payment for included images.",
+    "copyright_terms": "Verify the current issue terms on the official page.",
+    "publication_costs": "No submission fee; no payment for published images. Verify any optional costs.",
+    "source_url": "https://www.fstopmagazine.com/submissions.html",
+    "verification_url": "https://www.fstopmagazine.com/submissions.html",
+    "summary": "Submission Guidelines for F-Stop Magazine - A fine art photography magazine featuring contemporary photography from established and emerging photographers Visit F-Stop's Facebook page Visit F-Stop's Instagram page Visit F-Stop's Shop Email F-Stop submission guidelines ISSUE #140: Portfolio 2026 December/January Issue #140 will be a Portfolio issue. A portfol",
+    "tags": [
+      "editorial",
+      "fine art",
+      "international"
+    ],
+    "discovered_at": "2026-11-11T14:26:50Z",
+    "fee_status": "confirmed-free",
+    "fee_evidence": "L LETTERS Please limit your submission to 12 images, no more ( unless that issue's guidelines ask for more) Note: It is free to submit photographs to an issue of F-Stop. There is no payment for images that are included in an issue. 1. Image File Specific",
+    "last_verified": "2026-11-11T14:26:54Z",
+    "status": "expired",
+    "fingerprint": "de60c9a6eb1c9ae0",
+    "archived_at": "2026-11-11T14:26:54Z"
+  },
+  {
     "id": "magnum-foundation-news-9",
     "title": "Open Call: Fall 2026 New York City Fellowship",
     "organization": "Magnum Foundation",
@@ -20,13 +49,13 @@
       "reporting",
       "fellowship"
     ],
-    "discovered_at": "2026-11-10T14:56:10Z",
+    "discovered_at": "2026-11-11T14:26:53Z",
     "fee_status": "unverified",
     "fee_evidence": null,
-    "last_verified": "2026-11-10T14:56:13Z",
+    "last_verified": "2026-11-11T14:26:54Z",
     "status": "expired",
     "fingerprint": "dca71ec4ee87777b",
-    "archived_at": "2026-11-10T14:56:13Z"
+    "archived_at": "2026-11-11T14:26:54Z"
   },
   {
     "id": "women-photograph-grants",
@@ -49,13 +78,13 @@
       "project funding",
       "women"
     ],
-    "discovered_at": "2026-11-10T14:56:13Z",
+    "discovered_at": "2026-11-11T14:26:54Z",
     "fee_status": "confirmed-free",
     "fee_evidence": "FAQ: These grants are open to female, female-identifying, and non-binary documentary photographers of any nationality. There is no fee to apply. Applications must be submitted in English. There are no specific parameters on what is meant by \"emerging photographer",
-    "last_verified": "2026-11-10T14:56:13Z",
+    "last_verified": "2026-11-11T14:26:54Z",
     "status": "expired",
     "fingerprint": "0d025759aad4ab77",
-    "archived_at": "2026-11-10T14:56:13Z"
+    "archived_at": "2026-11-11T14:26:54Z"
   },
   {
     "id": "magnum-foundation-news-18",
