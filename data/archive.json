@@ -20,13 +20,13 @@
       "fine art",
       "international"
     ],
-    "discovered_at": "2026-11-13T14:38:08Z",
+    "discovered_at": "2026-11-14T13:35:01Z",
     "fee_status": "confirmed-free",
     "fee_evidence": "L LETTERS Please limit your submission to 12 images, no more ( unless that issue's guidelines ask for more) Note: It is free to submit photographs to an issue of F-Stop. There is no payment for images that are included in an issue. 1. Image File Specific",
-    "last_verified": "2026-11-13T14:38:19Z",
+    "last_verified": "2026-11-14T13:35:09Z",
     "status": "expired",
     "fingerprint": "de60c9a6eb1c9ae0",
-    "archived_at": "2026-11-13T14:38:19Z"
+    "archived_at": "2026-11-14T13:35:09Z"
   },
   {
     "id": "magnum-foundation-news-9",
@@ -49,13 +49,13 @@
       "reporting",
       "fellowship"
     ],
-    "discovered_at": "2026-11-13T14:38:14Z",
+    "discovered_at": "2026-11-14T13:35:04Z",
     "fee_status": "unverified",
     "fee_evidence": null,
-    "last_verified": "2026-11-13T14:38:19Z",
+    "last_verified": "2026-11-14T13:35:09Z",
     "status": "expired",
     "fingerprint": "dca71ec4ee87777b",
-    "archived_at": "2026-11-13T14:38:19Z"
+    "archived_at": "2026-11-14T13:35:09Z"
   },
   {
     "id": "women-photograph-grants",
@@ -78,13 +78,13 @@
       "project funding",
       "women"
     ],
-    "discovered_at": "2026-11-13T14:38:15Z",
+    "discovered_at": "2026-11-14T13:35:05Z",
     "fee_status": "confirmed-free",
     "fee_evidence": "FAQ: These grants are open to female, female-identifying, and non-binary documentary photographers of any nationality. There is no fee to apply. Applications must be submitted in English. There are no specific parameters on what is meant by \"emerging photographer",
-    "last_verified": "2026-11-13T14:38:19Z",
+    "last_verified": "2026-11-14T13:35:09Z",
     "status": "expired",
     "fingerprint": "0d025759aad4ab77",
-    "archived_at": "2026-11-13T14:38:19Z"
+    "archived_at": "2026-11-14T13:35:09Z"
   },
   {
     "id": "magnum-foundation-news-18",
