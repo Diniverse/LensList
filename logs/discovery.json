@@ -1,12 +1,7 @@
 {
-  "checked_at": "2026-11-24T17:49:23Z",
+  "checked_at": "2026-11-25T17:17:01Z",
   "sources_total": 5,
-  "sources_successful": 4,
-  "candidates_found": 13,
-  "errors": [
-    {
-      "source": "fstop-submissions",
-      "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.fstopmagazine.com/submissions.html"
-    }
-  ]
+  "sources_successful": 5,
+  "candidates_found": 14,
+  "errors": []
 }
